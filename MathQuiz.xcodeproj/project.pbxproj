@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93265B8A1DFC12CE000B86DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93265B891DFC12CE000B86DE /* Images.xcassets */; };
+		93265BA31DFC4787000B86DE /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93265BA21DFC4787000B86DE /* ResultsViewController.m */; };
+		93265BA61DFC48D0000B86DE /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93265BA51DFC48D0000B86DE /* QuizViewController.m */; };
 		938AA99E1DFBCAA40085C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938AA99D1DFBCAA40085C042 /* main.m */; };
 		938AA9A11DFBCAA40085C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 938AA9A01DFBCAA40085C042 /* AppDelegate.m */; };
 		938AA9A41DFBCAA40085C042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938AA9A31DFBCAA40085C042 /* ViewController.m */; };
 		938AA9A71DFBCAA40085C042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938AA9A51DFBCAA40085C042 /* Main.storyboard */; };
 		938AA9A91DFBCAA40085C042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938AA9A81DFBCAA40085C042 /* Assets.xcassets */; };
-		938AA9AC1DFBCAA40085C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938AA9AA1DFBCAA40085C042 /* LaunchScreen.storyboard */; };
 		938AA9B71DFBCAA40085C042 /* MathQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938AA9B61DFBCAA40085C042 /* MathQuizTests.m */; };
 		938AA9C21DFBCAA40085C042 /* MathQuizUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938AA9C11DFBCAA40085C042 /* MathQuizUITests.m */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93265B891DFC12CE000B86DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93265BA11DFC4787000B86DE /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		93265BA21DFC4787000B86DE /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		93265BA41DFC48D0000B86DE /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		93265BA51DFC48D0000B86DE /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		938AA9991DFBCAA40085C042 /* MathQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938AA99D1DFBCAA40085C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		938AA99F1DFBCAA40085C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +50,6 @@
 		938AA9A31DFBCAA40085C042 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		938AA9A61DFBCAA40085C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		938AA9A81DFBCAA40085C042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		938AA9AB1DFBCAA40085C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		938AA9AD1DFBCAA40085C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938AA9B21DFBCAA40085C042 /* MathQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938AA9B61DFBCAA40085C042 /* MathQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathQuizTests.m; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 		938AA9901DFBCAA40085C042 = {
 			isa = PBXGroup;
 			children = (
+				93265B891DFC12CE000B86DE /* Images.xcassets */,
 				938AA99B1DFBCAA40085C042 /* MathQuiz */,
 				938AA9B51DFBCAA40085C042 /* MathQuizTests */,
 				938AA9C01DFBCAA40085C042 /* MathQuizUITests */,
@@ -105,9 +112,12 @@
 				938AA9A01DFBCAA40085C042 /* AppDelegate.m */,
 				938AA9A21DFBCAA40085C042 /* ViewController.h */,
 				938AA9A31DFBCAA40085C042 /* ViewController.m */,
+				93265BA11DFC4787000B86DE /* ResultsViewController.h */,
+				93265BA21DFC4787000B86DE /* ResultsViewController.m */,
+				93265BA41DFC48D0000B86DE /* QuizViewController.h */,
+				93265BA51DFC48D0000B86DE /* QuizViewController.m */,
 				938AA9A51DFBCAA40085C042 /* Main.storyboard */,
 				938AA9A81DFBCAA40085C042 /* Assets.xcassets */,
-				938AA9AA1DFBCAA40085C042 /* LaunchScreen.storyboard */,
 				938AA9AD1DFBCAA40085C042 /* Info.plist */,
 				938AA99C1DFBCAA40085C042 /* Supporting Files */,
 			);
@@ -246,7 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938AA9AC1DFBCAA40085C042 /* LaunchScreen.storyboard in Resources */,
+				93265B8A1DFC12CE000B86DE /* Images.xcassets in Resources */,
 				938AA9A91DFBCAA40085C042 /* Assets.xcassets in Resources */,
 				938AA9A71DFBCAA40085C042 /* Main.storyboard in Resources */,
 			);
@@ -274,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				938AA9A41DFBCAA40085C042 /* ViewController.m in Sources */,
+				93265BA61DFC48D0000B86DE /* QuizViewController.m in Sources */,
 				938AA9A11DFBCAA40085C042 /* AppDelegate.m in Sources */,
 				938AA99E1DFBCAA40085C042 /* main.m in Sources */,
+				93265BA31DFC4787000B86DE /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +329,6 @@
 				938AA9A61DFBCAA40085C042 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		938AA9AA1DFBCAA40085C042 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				938AA9AB1DFBCAA40085C042 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,7 +426,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MathQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FD.MathQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MathQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FD.MathQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +513,7 @@
 				938AA9C81DFBCAA40085C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		938AA9C91DFBCAA40085C042 /* Build configuration list for PBXNativeTarget "MathQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				938AA9CB1DFBCAA40085C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		938AA9CC1DFBCAA40085C042 /* Build configuration list for PBXNativeTarget "MathQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				938AA9CE1DFBCAA40085C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

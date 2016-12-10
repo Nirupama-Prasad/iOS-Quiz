@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController;
+@property (weak, nonatomic) IBOutlet UIButton *AdditionButton;
+@property (weak, nonatomic) IBOutlet UIButton *SubtractionButton;
+@property (weak, nonatomic) IBOutlet UIButton *MultiplicationButton;
 
 @end
 

@@ -14,8 +14,13 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+if(_AdditionButton.isSelected)
+{
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.automaticallyAdjustsScrollViewInsets = NO;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
