@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuizViewController.h"
 
 @interface ViewController : UIViewController;
+@property(nonatomic) NSString *isWhatClicked;
+//@property(nonatomic) BOOL *isSubtractionClicked;
+//@property(nonatomic) BOOL *isMultiplicationClicked;
+
+
 @property (weak, nonatomic) IBOutlet UIButton *AdditionButton;
-@property (weak, nonatomic) IBOutlet UIButton *SubtractionButton;
-@property (weak, nonatomic) IBOutlet UIButton *MultiplicationButton;
+@property (weak, nonatomic) IBOutlet UIButton *Subtraction;
+@property (weak, nonatomic) IBOutlet UIButton *Multiplication;
+
 
 @end
 

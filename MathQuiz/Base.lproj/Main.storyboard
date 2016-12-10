@@ -28,17 +28,6 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKj-oy-vha">
-                                <rect key="frame" x="82" y="135" width="156" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
-                                <state key="normal" title="Addition">
-                                    <color key="titleColor" red="0.99278479814529419" green="0.99594038724899292" blue="0.99582940340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bZa-Tt-4Jb" kind="show" id="gQa-cb-FaT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQR-ok-vNm">
                                 <rect key="frame" x="71" y="277" width="186" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,7 +36,7 @@
                                     <color key="titleColor" red="0.99278479814529419" green="0.99594038724899292" blue="0.99582940340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bZa-Tt-4Jb" kind="show" id="BsK-gY-j8L"/>
+                                    <segue destination="bZa-Tt-4Jb" kind="show" identifier="toQuizs" id="NH3-HW-Sn8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-kY-0y5">
@@ -58,7 +47,7 @@
                                     <color key="titleColor" red="0.99278479814529419" green="0.99594038724899292" blue="0.99582940340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bZa-Tt-4Jb" kind="show" id="mb3-ux-GZd"/>
+                                    <segue destination="bZa-Tt-4Jb" kind="show" identifier="toQuizm" id="Pqm-L5-U4S"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxk-Rn-LPh">
@@ -68,17 +57,28 @@
                                 <color key="textColor" red="0.96040850877761841" green="0.98980551958084106" blue="0.98316222429275513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKj-oy-vha">
+                                <rect key="frame" x="82" y="175" width="156" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <state key="normal" title="Addition">
+                                    <color key="titleColor" red="0.99278479814529419" green="0.99594038724899292" blue="0.99582940340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bZa-Tt-4Jb" kind="show" identifier="toQuiz" id="yjA-oX-DIA"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="AdditionButton" destination="YKj-oy-vha" id="CEF-ZR-dTT"/>
-                        <outlet property="MultiplicationButton" destination="sHG-kY-0y5" id="khY-JL-1yT"/>
-                        <outlet property="SubtractionButton" destination="cQR-ok-vNm" id="JSH-Vg-YqN"/>
+                        <outlet property="AdditionButton" destination="YKj-oy-vha" id="QYC-lH-gBO"/>
+                        <outlet property="Multiplication" destination="sHG-kY-0y5" id="ZdG-ZE-dRv"/>
+                        <outlet property="Subtraction" destination="cQR-ok-vNm" id="Mde-iE-4jS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="136"/>
+            <point key="canvasLocation" x="-103.125" y="136.26760563380282"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="KKo-Ye-KZ4">
@@ -213,7 +213,7 @@
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </progressView>
-                            <navigationBar opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" shadowImage="3CE70702-1769-46CA-94C4-BAEB11861A3D" backIndicatorImage="Back" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-JB-NTa">
+                            <navigationBar opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" shadowImage="CD46CD93-99FD-48E5-9AEF-50A12E332FB2" backIndicatorImage="Back" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-JB-NTa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,7 +254,7 @@
                         <outlet property="Numpad8" destination="PEd-D6-LjY" id="f34-aF-Bz2"/>
                         <outlet property="Numpad9" destination="KkD-G1-Hkv" id="flf-pQ-QaB"/>
                         <outlet property="Operand1" destination="mbL-mV-uu6" id="Pdf-Rq-r1w"/>
-                        <outlet property="Operand2" destination="5M4-L7-kvu" id="Opl-gA-CEd"/>
+                        <outlet property="Operand2" destination="5M4-L7-kvu" id="jiO-fK-FuS"/>
                         <outlet property="Operator" destination="U3g-oB-5cS" id="lmm-mX-veZ"/>
                         <outlet property="Progress" destination="H56-Wc-bpF" id="4Yk-JW-8Q8"/>
                         <outlet property="QuesNo" destination="XHL-ke-XgI" id="hyi-t4-Cme"/>
@@ -329,7 +329,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3CE70702-1769-46CA-94C4-BAEB11861A3D" width="595" height="335">
+        <image name="Back" width="128" height="128"/>
+        <image name="Background" width="595" height="335"/>
+        <image name="CD46CD93-99FD-48E5-9AEF-50A12E332FB2" width="595" height="335">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -13672,11 +13674,9 @@ AAw0xQAMNM0ADDTQAAw01QAMNN0ADDTgAAw08gAMNPUADDT6AAAAAAAABAEAAAAAAAAAQQAAAAAAAAAA
 AAAAAAAMNPw
 </mutableData>
         </image>
-        <image name="Back" width="128" height="128"/>
-        <image name="Background" width="595" height="335"/>
         <image name="Image-1" width="152" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mb3-ux-GZd"/>
+        <segue reference="NH3-HW-Sn8"/>
     </inferredMetricsTieBreakers>
 </document>

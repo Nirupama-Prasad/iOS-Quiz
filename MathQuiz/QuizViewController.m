@@ -23,6 +23,25 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)setOperator:(NSString *)O{
+    NSString *Oper =@"a";
+    NSString *Oper2 =@"s";
+    NSString *Oper3 =@"m";
+    if ([O isEqualToString:Oper]==0){
+        self.Operator.text = [NSString stringWithFormat:@"+"];
+        self.Operand1.text = [NSString stringWithFormat:@"9"];
+        self.Operand2.text = [NSString stringWithFormat:@"0"];
+    }else if ([O isEqualToString:Oper2]==0){
+        self.Operator.text = [NSString stringWithFormat:@"-"];
+        self.Operand1.text = [NSString stringWithFormat:@"9"];
+        self.Operand2.text = [NSString stringWithFormat:@"0"];
+    }else if ([O isEqualToString:Oper3]==0){
+        self.Operator.text = [NSString stringWithFormat:@"X"];
+        self.Operand1.text = [NSString stringWithFormat:@"9"];
+        self.Operand2.text = [NSString stringWithFormat:@"0"];
+    }
+}
+
 
 /*
 #pragma mark - Navigation

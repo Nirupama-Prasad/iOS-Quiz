@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -17,13 +18,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-if(_AdditionButton.isSelected)
-{
+
         self.extendedLayoutIncludesOpaqueBars = NO;
         self.automaticallyAdjustsScrollViewInsets = NO;
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+//Declare Pass Variable
+    NSString *PassOpp;
+    NSString *PassOpSegue;
+//Check which button was tapped
+- (IBAction) buttonPressed: (UIButton*) Button{
+    if (Button == _AdditionButton)
+    {
+        NSLog(@"Entered Addition");
+        PassOpp = @"a";
+        PassOpSegue = @"toQuiz";
+    } else if (Button == _Subtraction){
+        PassOpp = @"s";
+        PassOpSegue = @"toQuizs";
+    } else if (Button == _Multiplication){
+        PassOpp = @"m";
+        PassOpSegue = @"toQuizm";
+    }
+}
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:PassOpSegue]){
+        QuizViewController *controller = (QuizViewController *) segue.destinationViewController;
+        [controller setOperator:(NSString *)PassOpp];
+    
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

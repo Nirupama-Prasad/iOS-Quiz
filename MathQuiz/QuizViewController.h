@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuizViewController : UIViewController
+
+
+@interface QuizViewController : UIViewController{
+    NSString *op;
+}
 @property (weak, nonatomic) IBOutlet UILabel *QuesNo;
 @property (weak, nonatomic) IBOutlet UILabel *Operand1;
 @property (weak, nonatomic) IBOutlet UILabel *Operator;
+@property (weak, nonatomic) IBOutlet UILabel *Operand2;
+
+- (void) setOperator:(NSString *)O;
+
+
+
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *NavBar;
 @property (weak, nonatomic) IBOutlet UIButton *Numpad1;
