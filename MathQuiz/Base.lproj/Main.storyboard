@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" highlightedImage="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-fi-lf9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-fi-lf9">
                                 <rect key="frame" x="0.0" y="0.0" width="495" height="746"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -213,7 +213,7 @@
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </progressView>
-                            <navigationBar opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" shadowImage="CD46CD93-99FD-48E5-9AEF-50A12E332FB2" backIndicatorImage="Back" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-JB-NTa">
+                            <navigationBar opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" shadowImage="EB183629-DFC6-416C-ABBD-CDE69BDDB03D" backIndicatorImage="Back" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-JB-NTa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,7 +258,6 @@
                         <outlet property="Operator" destination="U3g-oB-5cS" id="lmm-mX-veZ"/>
                         <outlet property="Progress" destination="H56-Wc-bpF" id="4Yk-JW-8Q8"/>
                         <outlet property="QuesNo" destination="XHL-ke-XgI" id="hyi-t4-Cme"/>
-                        <outlet property="QuizName" destination="kms-ZT-8FC" id="r0A-x9-e6o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sif-oS-rum" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -331,7 +330,7 @@
     <resources>
         <image name="Back" width="128" height="128"/>
         <image name="Background" width="595" height="335"/>
-        <image name="CD46CD93-99FD-48E5-9AEF-50A12E332FB2" width="595" height="335">
+        <image name="EB183629-DFC6-416C-ABBD-CDE69BDDB03D" width="595" height="335">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -13674,7 +13673,6 @@ AAw0xQAMNM0ADDTQAAw01QAMNN0ADDTgAAw08gAMNPUADDT6AAAAAAAABAEAAAAAAAAAQQAAAAAAAAAA
 AAAAAAAMNPw
 </mutableData>
         </image>
-        <image name="Image-1" width="152" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NH3-HW-Sn8"/>

@@ -27,6 +27,10 @@
     NSString *PassOpp;
     NSString *PassOpSegue;
 //Check which button was tapped
+//-(IBAction)  (sender: AnyObject) {
+ //   performSegueWithIdentifier("about", sender: sender)
+//}
+
 - (IBAction) buttonPressed: (UIButton*) Button{
     if (Button == _AdditionButton)
     {
@@ -41,7 +45,7 @@
         PassOpSegue = @"toQuizm";
     }
 }
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id) sender{
     if([segue.identifier isEqualToString:PassOpSegue]){
         QuizViewController *controller = (QuizViewController *) segue.destinationViewController;
         [controller setOperator:(NSString *)PassOpp];
