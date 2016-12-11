@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "QuizViewController.h"
 
+//NSString *PassOpp;
+//NSString *PassOpSegue;
+
 @interface ViewController : UIViewController;
 @property(nonatomic) NSString *isWhatClicked;
 //@property(nonatomic) BOOL *isSubtractionClicked;

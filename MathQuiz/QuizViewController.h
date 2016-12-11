@@ -12,13 +12,14 @@
 
 @interface QuizViewController : UIViewController{
     NSString *op;
+    //IBOutlet UILabel *Operand1;
 }
 @property (weak, nonatomic) IBOutlet UILabel *QuesNo;
-@property (weak, nonatomic) IBOutlet UILabel *Operand1;
-@property (weak, nonatomic) IBOutlet UILabel *Operator;
-@property (weak, nonatomic) IBOutlet UILabel *Operand2;
+@property (nonatomic, retain) IBOutlet UILabel *Operand1;
+@property (nonatomic, retain) IBOutlet UILabel *Operator;
+@property (nonatomic, retain) IBOutlet UILabel *Operand2;
 
-- (void) setOperator:(NSString *)O;
+- (void) setOperators:(NSString *)O;
 
 
 
