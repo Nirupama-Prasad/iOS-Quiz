@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *Result;
+@property (retain, nonatomic) IBOutlet UILabel *Result;
+-(void)setScore:(int *)S;
 
 @end

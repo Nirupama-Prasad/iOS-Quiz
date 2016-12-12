@@ -33,5 +33,11 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)  setScore:(int *)S{
+    self.Result = [[UILabel alloc] init];
+    dispatch_async(dispatch_get_main_queue(), ^{
+    NSLog(@"Value of score %d",S);
+   
+        [self.Result setText:[NSString stringWithFormat:@"%d",S]];});
+}
 @end
